@@ -1,6 +1,6 @@
-struct Node{};
+struct Node;
 
-struct Tree{};
+struct Tree;
 
 Tree *makeTree();
 void push(Tree *tree, int value);
