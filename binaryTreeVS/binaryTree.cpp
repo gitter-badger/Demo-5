@@ -1,5 +1,5 @@
 #include <iostream>
-#include "bst.h"
+#include "binaryTree.h"
 
 struct BSTNode
 {
