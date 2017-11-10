@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "binary_tree.h"
 
 struct Node {
@@ -20,7 +22,7 @@ void printRecursive(Node* root, bool isUp)
     if (root)
     {
         printRecursive((isUp) ? root->leftChild : root->rightChild, isUp);
-        cout << root->value << " ";
+        std::cout << root->value << " ";
         printRecursive((isUp) ? root->rightChild : root->leftChild, isUp);
     }
 }
