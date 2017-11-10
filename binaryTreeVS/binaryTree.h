@@ -6,8 +6,8 @@ struct Tree;
 Tree *createTree();
 void clearTree(Tree *tree);
 
-bool contains(Tree *tree, int value);
-bool add(Tree *tree, int value);
-bool remove(Tree *tree, int value);
+void contains(Tree *tree, int value);
+void add(Tree *tree, int value);
+void remove(Tree *tree, int value);
 
 void print(Tree *tree);
