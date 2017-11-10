@@ -10,3 +10,14 @@ struct Node {
 struct Tree {
 	Node *root;
 };
+
+void print(Node* node)
+{
+	if (node == nullptr)
+	{
+		return;
+	}
+	print(node->left);
+	std::cout << node->value << " ";
+	print(node->right);
+}

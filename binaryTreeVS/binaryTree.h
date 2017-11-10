@@ -10,4 +10,4 @@ void contains(Tree *tree, int value);
 void add(Tree *tree, int value);
 void remove(Tree *tree, int value);
 
-void print(Tree *tree);
+void print(Node* node);
