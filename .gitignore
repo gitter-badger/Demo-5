@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/hash function/build/
+/hash function/dist/
+/binaryTreeVS/project/build/

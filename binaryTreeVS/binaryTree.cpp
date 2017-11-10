@@ -10,3 +10,19 @@ struct Node {
 struct Tree {
 	Node *root;
 };
+
+void clearNode(Node *node)
+{
+    if (node == nullptr)
+        return;
+
+    clearNode(node->left);
+    clearNode(node->right);
+    delete node;
+}
+
+void clearTree(BTree *tree)
+{
+    clearNode(tree->root);
+    tree->root = nullptr;
+}
