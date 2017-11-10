@@ -10,7 +10,7 @@ struct Tree {
     Node* root;
 };
 
-void printTree(Tree *tree, bool isUp)
+void printTree(Tree* tree, bool isUp)
 {
     printRecursive(tree->root, isUp);
 }
