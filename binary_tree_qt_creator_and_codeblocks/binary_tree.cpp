@@ -12,8 +12,8 @@ struct Tree {
 
 void push(Tree *tree, int value)
 {
-    auto currentPosition = tree.root;
-    auto nextPosition = tree.root;
+    auto currentPosition = tree->root;
+    auto nextPosition = tree->root;
     while (nextPosition != nullptr)
     {
         currentPosition = nextPosition;
