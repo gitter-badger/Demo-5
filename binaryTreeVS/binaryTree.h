@@ -1,17 +1,13 @@
 #pragma once
 
-struct BSTNode;
+struct Node;
+struct Tree;
 
-struct BinarySearchTree
-{
-	BSTNode *root;
-};
+Tree *createTree();
+void clearTree(Tree *tree);
 
-BinarySearchTree *createTree();
-void clearTree(BinarySearchTree *tree);
+bool contains(Tree *tree, int value);
+bool add(Tree *tree, int value);
+bool remove(Tree *tree, int value);
 
-bool contains(BinarySearchTree *tree, int value);
-bool add(BinarySearchTree *tree, int value);
-bool remove(BinarySearchTree *tree, int value);
-
-void print(BinarySearchTree *tree);
+void print(Tree *tree);
